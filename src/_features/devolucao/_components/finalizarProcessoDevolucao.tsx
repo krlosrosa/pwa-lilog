@@ -2,6 +2,7 @@
 import { Card, CardContent } from "@/_shared/components/ui/card";
 import { Button } from "@/_shared/components/ui/button";
 import { AlertTriangle, CheckCircle, ListChecks } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const itensConferidos = [
   { nome: "Produto A", codigo: "123", divergente: false },
@@ -17,10 +18,12 @@ const anomalias = [
 
 const produtosDivergentes = itensConferidos.filter(item => item.divergente);
 
+
 const FinalizarProcessoDevolucao = () => {
+  const router = useRouter();
   const handleFinalizar = () => {
     // Aqui você pode implementar a lógica de finalização
-    alert('Processo de devolução finalizado!');
+    router.push("/devolucao/demandas");
   };
 
   return (
