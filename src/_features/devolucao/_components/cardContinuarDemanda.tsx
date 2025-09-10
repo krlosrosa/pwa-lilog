@@ -76,11 +76,7 @@ export function CardContinuarDemanda({
             </Badge>
             <Button
               onClick={() => {
-                if (onContinue) {
-                  onContinue();
-                } else {
-                  router.push(`/devolucao/demandas/checklist`);
-                }
+                  router.push(`/devolucao/demandas/conferenciacega`);
               }}
               className="h-10 text-sm font-medium"
               size="default"
