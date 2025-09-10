@@ -1,9 +1,10 @@
-import ConferenciaReentrega from "@/_features/devolucao/_components/conferenciaReentrega";
+
+import ValidacaoReentrega from "@/_features/devolucao/views/validacaoReentrega";
 
 export default function ConferenciaReentregaPage() {
   return (
     <div>
-      <ConferenciaReentrega />
+      <ValidacaoReentrega />
     </div>
   )
 }
